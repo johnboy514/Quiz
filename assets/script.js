@@ -2,6 +2,7 @@
 var startBtn  = document.querySelector("#start");
 var textField  = document.querySelector(".card-body");
 var highScoreBtn = document.querySelector(".highScoreBtn");
+var showHighScoresBtn = document.querySelector(".showHighScoresBtn");
 var choiceBtn  = document.querySelector(".card-footer");
 var choiceBtn1  = document.querySelector("#choice1");
 var choiceBtn2  = document.querySelector("#choice2");
@@ -60,6 +61,7 @@ function writeQuestion() {
 questionText.textContent = questions[questionsPos];
 startBtn.style.display = 'none';
 choiceBtn.style.display = 'inline-block';
+showHighScoresBtn.style.display = 'none';
 choiceBtn1.textContent = (answersArray[currAnswers])[0];
 choiceBtn2.textContent = (answersArray[currAnswers])[1];
 choiceBtn3.textContent = (answersArray[currAnswers])[2];
@@ -132,6 +134,7 @@ function startCountdown(seconds) {
     localStorage.setItem("highscore", counter);
     localStorage.setItem("initials", initials);
     startBtn.style.display = 'inline-block';
+    showHighScoresBtn.style.display = 'inline-block';
     highScoreBtn.style.display = 'none';
     textField.style.display = 'none';
     questionsPos = 0;
@@ -142,4 +145,13 @@ function startCountdown(seconds) {
     solution.textContent = "";
     questionText.textContent = "Click Start to begin";
     // add view high scores button to start to begin page to be shown high scores
+ };
+
+ function showHighScores () {
+
+ };
+
+ function renderLastRegistered() {
+    
+
  };
