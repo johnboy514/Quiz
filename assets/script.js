@@ -1,6 +1,7 @@
 // Variable assignments
 var startBtn  = document.querySelector("#start");
 var textField  = document.querySelector(".card-body");
+var highScoreField = document.querySelector(".cardTest");
 var highScoreBtn = document.querySelector(".highScoreBtn");
 var showHighScoresBtn = document.querySelector(".showHighScoresBtn");
 var choiceBtn  = document.querySelector(".card-footer");
@@ -38,6 +39,7 @@ var btnArray = [choiceBtn1, choiceBtn2, choiceBtn3, choiceBtn4];
 var correctChosen;
 
 startBtn.addEventListener("click", startTimer);
+showHighScoresBtn.addEventListener("click", showHighScores);
 
 function startTimer() {
     startCountdown(seconds);
@@ -147,11 +149,16 @@ function startCountdown(seconds) {
     // add view high scores button to start to begin page to be shown high scores
  };
 
- function showHighScores () {
+var scoreList = document.querySelector("#score-list");
 
- };
+function showHighScores() {
+  highScoreField.style.display = "inline-block";
+  counter = localStorage.getItem("highscore")
+  initials = localStorage.getItem("initials")
+  scoreList.innerHTML = "";
 
- function renderLastRegistered() {
-    
+  var li = document.createElement("li");
+  li.textContent = initials + "" + counter;
 
- };
+  scoreList.appendChild(li);
+};
