@@ -13,7 +13,7 @@ This project was an atttempt at making a quiz to further our understanding of ja
 
 ## Installation
 
-To use this project the user needs to open the index.html in a browser. it can also be reached on github live pages from this link 
+To use this project the user needs to open the index.html in a browser. it can also be reached on github live pages from this link https://johnboy514.github.io/Quiz/
 
 ## Usage
 
