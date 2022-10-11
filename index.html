@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -25,19 +25,21 @@
           ></textarea>
         </div>
         <div class="card-footer">
-            <button id="choice1" class="choiceBtn"></button>
-            <button id="choice2" class="choiceBtn"></button>
-            <button id="choice3" class="choiceBtn"></button>
-            <button id="choice4" class="choiceBtn"></button>          
-        </div>
-        <button id="start" class="startBtn">Start</button>
-        <button id="highScore" class="highScoreBtn">Submit Score</button>
-        <button id="showHighScores" class="showHighScoresBtn">Show High Scores</button>
+          <button id="choice1" class="choiceBtn"></button><br>
+          <button id="choice2" class="choiceBtn"></button><br>
+          <button id="choice3" class="choiceBtn"></button><br>
+          <button id="choice4" class="choiceBtn"></button><br>
       </div>
-      <div class="cardTest">
-        <ul id="score-list"></ul>
-      </div>
+      <button id="start" class="startBtn">Start</button>
+      <button id="highScore" class="highScoreBtn">Submit Score</button>
+      <button id="showHighScores" class="showHighScoresBtn">Show Highscores</button>
+      <button id="clearHighScores" class="clearHighScoresBtn">Clear Highscores</button>
     </div>
-    <script src="assets/script.js"></script>
-  </body>
+    <div class="cardTest">
+
+      <ol id="score-list">Highscores</ol>
+  </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
 </html>
